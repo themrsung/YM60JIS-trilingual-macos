@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 834 294" width="834" height="294" font-family="Helvetica, Arial, sans-serif">
+<rect width="834" height="294" rx="10" fill="#e9e9ec"/>
+<rect x="14" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="68" y="14" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="93.0" y="44.0" font-size="15" text-anchor="middle" fill="#222">F1</text>
+<rect x="122" y="14" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="147.0" y="44.0" font-size="15" text-anchor="middle" fill="#222">F2</text>
+<rect x="176" y="14" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="201.0" y="44.0" font-size="15" text-anchor="middle" fill="#222">F3</text>
+<rect x="230" y="14" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="255.0" y="44.0" font-size="15" text-anchor="middle" fill="#222">F4</text>
+<rect x="284" y="14" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="309.0" y="44.0" font-size="15" text-anchor="middle" fill="#222">F5</text>
+<rect x="338" y="14" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="363.0" y="44.0" font-size="15" text-anchor="middle" fill="#222">F6</text>
+<rect x="392" y="14" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="417.0" y="44.0" font-size="15" text-anchor="middle" fill="#222">F7</text>
+<rect x="446" y="14" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="471.0" y="44.0" font-size="15" text-anchor="middle" fill="#222">F8</text>
+<rect x="500" y="14" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="525.0" y="44.0" font-size="15" text-anchor="middle" fill="#222">F9</text>
+<rect x="554" y="14" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="579.0" y="44.0" font-size="15" text-anchor="middle" fill="#222">F10</text>
+<rect x="608" y="14" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="633.0" y="44.0" font-size="15" text-anchor="middle" fill="#222">F11</text>
+<rect x="662" y="14" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="687.0" y="44.0" font-size="15" text-anchor="middle" fill="#222">F12</text>
+<rect x="716" y="14" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="741.0" y="44.0" font-size="15" text-anchor="middle" fill="#222">Ins</text>
+<rect x="770" y="14" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="795.0" y="44.0" font-size="15" text-anchor="middle" fill="#222">Del</text>
+<rect x="14" y="68" width="77.0" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="52.5" y="98.0" font-size="15" text-anchor="middle" fill="#222">Caps</text>
+<rect x="95.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="149.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="203.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="257.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="311.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="365.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="419.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="473.0" y="68" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="498.0" y="98.0" font-size="15" text-anchor="middle" fill="#222">PrtSc</text>
+<rect x="527.0" y="68" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="552.0" y="98.0" font-size="15" text-anchor="middle" fill="#222">ScrLk</text>
+<rect x="581.0" y="68" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="606.0" y="98.0" font-size="15" text-anchor="middle" fill="#222">Pause</text>
+<rect x="635.0" y="68" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="660.0" y="98.0" font-size="15" text-anchor="middle" fill="#222">↑</text>
+<rect x="689.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="14" y="122" width="90.5" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="108.5" y="122" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="133.5" y="152.0" font-size="15" text-anchor="middle" fill="#222">Vol−</text>
+<rect x="162.5" y="122" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="187.5" y="152.0" font-size="15" text-anchor="middle" fill="#222">Vol+</text>
+<rect x="216.5" y="122" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="241.5" y="152.0" font-size="15" text-anchor="middle" fill="#222">Mute</text>
+<rect x="270.5" y="122" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="295.5" y="152.0" font-size="15" text-anchor="middle" fill="#222">Eject</text>
+<rect x="324.5" y="122" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="378.5" y="122" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="403.5" y="152.0" font-size="15" text-anchor="middle" fill="#222">KP *</text>
+<rect x="432.5" y="122" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="457.5" y="152.0" font-size="15" text-anchor="middle" fill="#222">KP /</text>
+<rect x="486.5" y="122" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="511.5" y="152.0" font-size="15" text-anchor="middle" fill="#222">Home</text>
+<rect x="540.5" y="122" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="565.5" y="152.0" font-size="15" text-anchor="middle" fill="#222">PgUp</text>
+<rect x="594.5" y="122" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="619.5" y="152.0" font-size="15" text-anchor="middle" fill="#222">←</text>
+<rect x="648.5" y="122" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="673.5" y="152.0" font-size="15" text-anchor="middle" fill="#222">→</text>
+<rect x="702.5" y="122" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="14" y="176" width="104" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="122" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="176" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="230" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="284" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="338" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="392" y="176" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="417.0" y="206.0" font-size="15" text-anchor="middle" fill="#222">KP +</text>
+<rect x="446" y="176" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="471.0" y="206.0" font-size="15" text-anchor="middle" fill="#222">KP −</text>
+<rect x="500" y="176" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="525.0" y="206.0" font-size="15" text-anchor="middle" fill="#222">End</text>
+<rect x="554" y="176" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="579.0" y="206.0" font-size="15" text-anchor="middle" fill="#222">PgDn</text>
+<rect x="608" y="176" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="633.0" y="206.0" font-size="15" text-anchor="middle" fill="#222">↓</text>
+<rect x="662" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="716" y="176" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="741.0" y="206.0" font-size="15" text-anchor="middle" fill="#222">PgUp</text>
+<rect x="770" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="14" y="230" width="50" height="50" rx="5" fill="#ffe3b3" stroke="#888"/>
+<text x="39.0" y="253.0" font-size="15" text-anchor="middle" fill="#222">Fn</text>
+<text x="39.0" y="269.0" font-size="10" text-anchor="middle" fill="#666">(held)</text>
+<rect x="81.5" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="135.5" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="189.5" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="243.5" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="297.5" y="230" width="131.0" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="432.5" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="486.5" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="540.5" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<rect x="594.5" y="230" width="50" height="50" rx="5" fill="#ffe3b3" stroke="#888"/>
+<text x="619.5" y="253.0" font-size="15" text-anchor="middle" fill="#222">Fn</text>
+<text x="619.5" y="269.0" font-size="10" text-anchor="middle" fill="#666">(held)</text>
+<rect x="662.0" y="230" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="687.0" y="260.0" font-size="15" text-anchor="middle" fill="#222">Home</text>
+<rect x="716.0" y="230" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="741.0" y="260.0" font-size="15" text-anchor="middle" fill="#222">PgDn</text>
+<rect x="770.0" y="230" width="50" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="795.0" y="260.0" font-size="15" text-anchor="middle" fill="#222">End</text>
+<path d="M743.0 68 H820 V172 H756.5 V118 H743.0 Z" fill="#d6dae3" stroke="#888" stroke-linejoin="round"/>
+<text x="788.25" y="125" font-size="10" text-anchor="middle" fill="#222">KP Enter</text>
+</svg>

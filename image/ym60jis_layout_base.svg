@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 834 294" width="834" height="294" font-family="Helvetica, Arial, sans-serif">
+<rect width="834" height="294" rx="10" fill="#e9e9ec"/>
+<rect x="14" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="39.0" y="37.0" font-size="15" text-anchor="middle" fill="#222">Esc</text>
+<rect x="68" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="93.0" y="37.0" font-size="15" text-anchor="middle" fill="#222">1</text>
+<rect x="122" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="147.0" y="37.0" font-size="15" text-anchor="middle" fill="#222">2</text>
+<rect x="176" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="201.0" y="37.0" font-size="15" text-anchor="middle" fill="#222">3</text>
+<rect x="230" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="255.0" y="37.0" font-size="15" text-anchor="middle" fill="#222">4</text>
+<rect x="284" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="309.0" y="37.0" font-size="15" text-anchor="middle" fill="#222">5</text>
+<rect x="338" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="363.0" y="37.0" font-size="15" text-anchor="middle" fill="#222">6</text>
+<rect x="392" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="417.0" y="37.0" font-size="15" text-anchor="middle" fill="#222">7</text>
+<rect x="446" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="471.0" y="37.0" font-size="15" text-anchor="middle" fill="#222">8</text>
+<rect x="500" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="525.0" y="37.0" font-size="15" text-anchor="middle" fill="#222">9</text>
+<rect x="554" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="579.0" y="37.0" font-size="15" text-anchor="middle" fill="#222">0</text>
+<rect x="608" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="633.0" y="37.0" font-size="15" text-anchor="middle" fill="#222">-</text>
+<rect x="662" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="687.0" y="37.0" font-size="15" text-anchor="middle" fill="#222">^</text>
+<rect x="716" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="741.0" y="37.0" font-size="15" text-anchor="middle" fill="#222">¥</text>
+<rect x="770" y="14" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="795.0" y="37.0" font-size="15" text-anchor="middle" fill="#222">BS</text>
+<rect x="14" y="68" width="77.0" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="52.5" y="91.0" font-size="15" text-anchor="middle" fill="#222">Tab</text>
+<text x="52.5" y="107.0" font-size="10" text-anchor="middle" fill="#666">1.5u</text>
+<rect x="95.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="120.0" y="91.0" font-size="15" text-anchor="middle" fill="#222">Q</text>
+<rect x="149.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="174.0" y="91.0" font-size="15" text-anchor="middle" fill="#222">W</text>
+<rect x="203.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="228.0" y="91.0" font-size="15" text-anchor="middle" fill="#222">E</text>
+<rect x="257.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="282.0" y="91.0" font-size="15" text-anchor="middle" fill="#222">R</text>
+<rect x="311.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="336.0" y="91.0" font-size="15" text-anchor="middle" fill="#222">T</text>
+<rect x="365.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="390.0" y="91.0" font-size="15" text-anchor="middle" fill="#222">Y</text>
+<rect x="419.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="444.0" y="91.0" font-size="15" text-anchor="middle" fill="#222">U</text>
+<rect x="473.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="498.0" y="91.0" font-size="15" text-anchor="middle" fill="#222">I</text>
+<rect x="527.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="552.0" y="91.0" font-size="15" text-anchor="middle" fill="#222">O</text>
+<rect x="581.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="606.0" y="91.0" font-size="15" text-anchor="middle" fill="#222">P</text>
+<rect x="635.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="660.0" y="91.0" font-size="15" text-anchor="middle" fill="#222">@</text>
+<rect x="689.0" y="68" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="714.0" y="91.0" font-size="15" text-anchor="middle" fill="#222">[</text>
+<rect x="14" y="122" width="90.5" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="59.25" y="145.0" font-size="10" text-anchor="middle" fill="#222">Control</text>
+<text x="59.25" y="161.0" font-size="10" text-anchor="middle" fill="#666">1.75u</text>
+<rect x="108.5" y="122" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="133.5" y="145.0" font-size="15" text-anchor="middle" fill="#222">A</text>
+<rect x="162.5" y="122" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="187.5" y="145.0" font-size="15" text-anchor="middle" fill="#222">S</text>
+<rect x="216.5" y="122" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="241.5" y="145.0" font-size="15" text-anchor="middle" fill="#222">D</text>
+<rect x="270.5" y="122" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="295.5" y="145.0" font-size="15" text-anchor="middle" fill="#222">F</text>
+<rect x="324.5" y="122" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="349.5" y="145.0" font-size="15" text-anchor="middle" fill="#222">G</text>
+<rect x="378.5" y="122" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="403.5" y="145.0" font-size="15" text-anchor="middle" fill="#222">H</text>
+<rect x="432.5" y="122" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="457.5" y="145.0" font-size="15" text-anchor="middle" fill="#222">J</text>
+<rect x="486.5" y="122" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="511.5" y="145.0" font-size="15" text-anchor="middle" fill="#222">K</text>
+<rect x="540.5" y="122" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="565.5" y="145.0" font-size="15" text-anchor="middle" fill="#222">L</text>
+<rect x="594.5" y="122" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="619.5" y="145.0" font-size="15" text-anchor="middle" fill="#222">;</text>
+<rect x="648.5" y="122" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="673.5" y="145.0" font-size="15" text-anchor="middle" fill="#222">:</text>
+<rect x="702.5" y="122" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="727.5" y="145.0" font-size="15" text-anchor="middle" fill="#222">]</text>
+<rect x="14" y="176" width="104" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="66.0" y="199.0" font-size="15" text-anchor="middle" fill="#222">Shift</text>
+<text x="66.0" y="215.0" font-size="10" text-anchor="middle" fill="#666">2u</text>
+<rect x="122" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="147.0" y="199.0" font-size="15" text-anchor="middle" fill="#222">Z</text>
+<rect x="176" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="201.0" y="199.0" font-size="15" text-anchor="middle" fill="#222">X</text>
+<rect x="230" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="255.0" y="199.0" font-size="15" text-anchor="middle" fill="#222">C</text>
+<rect x="284" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="309.0" y="199.0" font-size="15" text-anchor="middle" fill="#222">V</text>
+<rect x="338" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="363.0" y="199.0" font-size="15" text-anchor="middle" fill="#222">B</text>
+<rect x="392" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="417.0" y="199.0" font-size="15" text-anchor="middle" fill="#222">N</text>
+<rect x="446" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="471.0" y="199.0" font-size="15" text-anchor="middle" fill="#222">M</text>
+<rect x="500" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="525.0" y="199.0" font-size="15" text-anchor="middle" fill="#222">,</text>
+<rect x="554" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="579.0" y="199.0" font-size="15" text-anchor="middle" fill="#222">.</text>
+<rect x="608" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="633.0" y="199.0" font-size="15" text-anchor="middle" fill="#222">/</text>
+<rect x="662" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="687.0" y="199.0" font-size="15" text-anchor="middle" fill="#222">_</text>
+<rect x="716" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="741.0" y="199.0" font-size="15" text-anchor="middle" fill="#222">↑</text>
+<rect x="770" y="176" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="795.0" y="199.0" font-size="15" text-anchor="middle" fill="#222">Shift</text>
+<rect x="14" y="230" width="50" height="50" rx="5" fill="#ffe3b3" stroke="#888"/>
+<text x="39.0" y="253.0" font-size="15" text-anchor="middle" fill="#222">Fn</text>
+<rect x="81.5" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="106.5" y="253.0" font-size="15" text-anchor="middle" fill="#222">Lang3</text>
+<rect x="135.5" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="160.5" y="253.0" font-size="12" text-anchor="middle" fill="#222">Option</text>
+<rect x="189.5" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="214.5" y="253.0" font-size="10" text-anchor="middle" fill="#222">Command</text>
+<rect x="243.5" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="268.5" y="253.0" font-size="15" text-anchor="middle" fill="#222">英数</text>
+<rect x="297.5" y="230" width="131.0" height="50" rx="5" fill="#d6dae3" stroke="#888"/>
+<text x="363.0" y="253.0" font-size="15" text-anchor="middle" fill="#222">Space</text>
+<text x="363.0" y="269.0" font-size="10" text-anchor="middle" fill="#666">2.5u</text>
+<rect x="432.5" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="457.5" y="253.0" font-size="15" text-anchor="middle" fill="#222">かな</text>
+<rect x="486.5" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="511.5" y="253.0" font-size="10" text-anchor="middle" fill="#222">Command</text>
+<rect x="540.5" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="565.5" y="253.0" font-size="12" text-anchor="middle" fill="#222">Option</text>
+<rect x="594.5" y="230" width="50" height="50" rx="5" fill="#ffe3b3" stroke="#888"/>
+<text x="619.5" y="253.0" font-size="15" text-anchor="middle" fill="#222">Fn</text>
+<rect x="662.0" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="687.0" y="253.0" font-size="15" text-anchor="middle" fill="#222">←</text>
+<rect x="716.0" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="741.0" y="253.0" font-size="15" text-anchor="middle" fill="#222">↓</text>
+<rect x="770.0" y="230" width="50" height="50" rx="5" fill="#fafafa" stroke="#888"/>
+<text x="795.0" y="253.0" font-size="15" text-anchor="middle" fill="#222">→</text>
+<path d="M743.0 68 H820 V172 H756.5 V118 H743.0 Z" fill="#d6dae3" stroke="#888" stroke-linejoin="round"/>
+<text x="788.25" y="120" font-size="15" text-anchor="middle" fill="#222">Enter</text>
+<text x="788.25" y="136" font-size="10" text-anchor="middle" fill="#666">ISO</text>
+</svg>
