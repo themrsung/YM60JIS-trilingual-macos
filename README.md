@@ -20,8 +20,8 @@ This is a fork of [ymkn/YM60JIS](https://github.com/ymkn/YM60JIS). It changes th
 - **Key count:** the board has 69 keys instead of 67. The two new switches are on matrix positions (4,4) and (4,7).
 
 > [!IMPORTANT]
-> The firmware and Vial definition are updated. The KiCAD schematic, PCB and plate are being updated for the new bottom row.
-> The files under `KiCAD/*/production/` and the prebuilt `firmware/QMK/ymkn_ym60jis_vial.uf2` are still for the original YM60JIS layout. Don't order them for this layout, and don't flash that `.uf2`.
+> The firmware, Vial definition, KiCAD schematic, PCB and plate are updated for the new bottom row. The PCB passes DRC with no unconnected items, but it has not been fabricated or tested yet.
+> The files under `KiCAD/*/production/` and the prebuilt `firmware/QMK/ymkn_ym60jis_vial.uf2` are still for the original YM60JIS layout. Don't order them for this layout, and don't flash that `.uf2`; generate new fabrication files from the KiCAD sources instead.
 
 ## Default Layout / Key Mapping
 
@@ -50,6 +50,7 @@ Customize the key mapping with the [Vial](https://get.vial.today/) configurator.
 
 ## Specification
 
+- Board revision: YM60JIS Trilingual v1.1.2, based on YM60JIS v1.1.1
 - Supports Cherry MX-style switches
 - USB Type-C connector (USB 2.0)
 - Hot-swap sockets for mechanical switches
@@ -57,6 +58,10 @@ Customize the key mapping with the [Vial](https://get.vial.today/) configurator.
 - Dimensions: 285 × 94.6 × 1.6 mm (W × H × D)
 - Compatible with most 60% keyboard cases
   - Note: the center and bottom-right mounting holes are not included
+
+## Board Renders
+
+Open [doc/pcb-compare/index.html](doc/pcb-compare/index.html) in a browser to compare 3D renders of the original YM60JIS v1.1.1 and this fork, for the PCB front, PCB back and plate.
 
 ## Build Guide
 

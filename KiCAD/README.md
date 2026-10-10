@@ -2,7 +2,9 @@
 
 ## Requirements
 
-KiCAD 8.x or higher
+KiCAD 10.x or higher
+
+The PCB and plate files were saved with KiCAD 10 and can't be opened in earlier versions.
 
 ## Dependencies
 

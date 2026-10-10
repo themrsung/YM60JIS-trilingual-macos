@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YM60JIS Trilingual v1.1.2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one column, a bench-style viewer up top (slider over two renders), facts below in two short columns. */
+:root {
+  --bg: #eef0ea;          /* bench paper, faint green bias */
+  --surface: #f8f9f5;
+  --fg: #1d221c;
+  --muted: #5b6458;
+  --line: #d3d8cd;
+  --stage: #2a2f27;       /* dark mat behind the renders */
+  --accent: #a87a1f;      /* ENIG gold */
+  --accent-ink: #ffffff;
+  --before: #8a4b3c;
+  --after: #2f6d4a;
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151813; --surface: #1d211b; --fg: #e5e9e0; --muted: #9aa394; --line: #343a30;
+    --stage: #0d0f0c; --accent: #d4a645; --accent-ink: #1a1405; --before: #d08b78; --after: #7cc69a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #151813; --surface: #1d211b; --fg: #e5e9e0; --muted: #9aa394; --line: #343a30;
+  --stage: #0d0f0c; --accent: #d4a645; --accent-ink: #1a1405; --before: #d08b78; --after: #7cc69a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.55; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 56px; display: flex; flex-direction: column; gap: 28px; }
+
+header { display: flex; flex-direction: column; gap: 6px; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(26px, 4vw, 38px); line-height: 1.1; margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+.lede { margin: 0; max-width: 68ch; color: var(--muted); }
+.lede code, li code, td code { font-family: var(--mono); font-size: .9em; }
+
+.viewer { display: flex; flex-direction: column; gap: 12px; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; justify-content: space-between; }
+.tabs, .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.tabs button, .seg button {
+  font: 500 14px var(--body); color: var(--fg); background: transparent; border: 0; padding: 8px 14px; cursor: pointer;
+}
+.tabs button + button, .seg button + button { border-left: 1px solid var(--line); }
+.tabs button[aria-selected="true"], .seg button[aria-pressed="true"] { background: var(--fg); color: var(--bg); }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.stage { background: var(--stage); border-radius: 10px; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; }
+.frame { position: relative; width: 100%; aspect-ratio: 2384 / 784; touch-action: pan-y; cursor: ew-resize; user-select: none; }
+/* zoom: 2.6x wide, crop to the bottom ~45% of the board (rows 4-5) */
+.stage.zoom { display: flex; flex-direction: column; justify-content: flex-end; aspect-ratio: 2384 / 917; }
+.stage.zoom .frame { width: 260%; max-width: none; flex: none; }
+.stage.zoom .tag { display: none; }
+.frame img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; max-width: none; pointer-events: none; }
+.frame .before { clip-path: inset(0 calc(100% - var(--pos, 50%)) 0 0); }
+.divider { position: absolute; top: 0; bottom: 0; left: var(--pos, 50%); width: 2px; margin-left: -1px; background: var(--accent); pointer-events: none; }
+.divider::after {
+  content: ""; position: absolute; top: 50%; left: 50%; width: 22px; height: 22px; margin: -11px 0 0 -11px;
+  border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px rgba(0,0,0,.25);
+}
+.tag { position: absolute; top: 10px; font: 500 12px var(--mono); padding: 3px 8px; border-radius: 4px; color: #fff; pointer-events: none; }
+.tag.b { left: 10px; background: var(--before); }
+.tag.a { right: 10px; background: var(--after); }
+
+.under { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+.under label { font: 500 13px var(--mono); color: var(--muted); }
+#pos { flex: 1 1 240px; accent-color: var(--accent); }
+.note { font-size: 13px; color: var(--muted); margin: 0; }
+
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px 40px; }
+.facts section { min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+h2 { font-family: var(--display); font-size: 18px; font-weight: 600; margin: 0; }
+ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+.row { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 7px 10px 7px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 500 12px var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+td.num { font-family: var(--mono); text-align: right; padding-right: 0; }
+.pill { display: inline-block; font: 500 12px var(--mono); padding: 1px 7px; border-radius: 999px; border: 1px solid currentColor; }
+.ok { color: var(--after); }
+
+.keys { display: flex; flex-wrap: wrap; gap: 4px; font: 500 12px var(--mono); }
+.keys span { border: 1px solid var(--line); background: var(--surface); border-radius: 4px; padding: 4px 6px; min-width: 30px; text-align: center; }
+.keys .gap { border-style: dashed; color: var(--muted); background: transparent; min-width: 14px; }
+.keys .wide { min-width: 76px; }
+@media (prefers-reduced-motion: no-preference) { .divider, .frame .before { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">KiCAD 10 renders · 285 × 94.6 mm</div>
+    <h1>YM60JIS Trilingual v1.1.2</h1>
+    <p class="lede">The original YM60JIS v1.1.1 board compared with this fork. Only the bottom row changed: every key is now 1u except a 2.5u spacebar, with two new switches for 英数 and かな. Drag across the render, or use the slider, to compare.</p>
+  </header>
+
+  <div class="viewer">
+    <div class="toolbar">
+      <div class="tabs" role="tablist" aria-label="View">
+        <button role="tab" id="t-top" aria-selected="true" data-view="pcb_top">PCB front</button>
+        <button role="tab" id="t-bottom" aria-selected="false" data-view="pcb_bottom">PCB back</button>
+        <button role="tab" id="t-plate" aria-selected="false" data-view="plate_top">Plate</button>
+      </div>
+      <div class="seg" aria-label="Zoom">
+        <button id="z-fit" aria-pressed="true">Whole board</button>
+        <button id="z-row" aria-pressed="false">Zoom bottom rows</button>
+      </div>
+    </div>
+    <div class="stage" id="stage">
+      <div class="frame" id="frame">
+        <img class="after" id="img-after" src="img/pcb_top_after.png" alt="After: YM60JIS Trilingual v1.1.2">
+        <img class="before" id="img-before" src="img/pcb_top_before.png" alt="Before: YM60JIS v1.1.1">
+        <div class="divider"></div>
+        <span class="tag b">Before · v1.1.1</span>
+        <span class="tag a">After · v1.1.2</span>
+      </div>
+    </div>
+    <div class="under">
+      <label for="pos">Before ◂ ▸ After</label>
+      <input type="range" id="pos" min="0" max="100" value="50" step="0.1">
+    </div>
+    <p class="note" id="viewnote">Switch side. The bottom row is the one that changed.</p>
+  </div>
+
+  <div class="facts">
+    <section>
+      <h2>Bottom row</h2>
+      <div class="keys" aria-label="New bottom row, left to right">
+        <span>Fn</span><span class="gap" title="0.25u gap"></span><span>Lang3</span><span>Opt</span><span>Cmd</span><span>英数</span><span class="wide">Space 2.5u</span><span>かな</span><span>Cmd</span><span>Opt</span><span>Fn</span><span class="gap" title="0.25u gap"></span><span>←</span><span>↓</span><span>→</span>
+      </div>
+      <ul>
+        <li>12 × 1u keys and a 2.5u spacebar (about 46 mm, the HHKB size), with a 0.25u gap on each side of the modifier block.</li>
+        <li>New switches SW68 (英数, COL4) and SW69 (かな, COL7) with diodes D68 and D69. The board has 69 keys.</li>
+        <li>The 2.75u and 3u spacebar stabilizers are replaced by one 2u stabilizer.</li>
+        <li>The arrow keys did not move.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Board changes</h2>
+      <ul>
+        <li>Row 4 traces were redrawn by script in the same pattern as the rest of the board: switch → diode → via → ROW4 on the front copper, and each column drops from row 3 on the back copper.</li>
+        <li>The ROW4 trace from the MCU now drops beside the Fn switch, clear of its holes.</li>
+        <li>One GND via moved 2.75 mm right, off the new stabilizer hole.</li>
+        <li>The “YM60JIS” text logo moved left, off the かな switch.</li>
+        <li>The version label now reads <code>YM60JIS Trilingual v1.1.2 @ymkn &amp; @themrsung</code>, in the gap between Fn and Lang3.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Design rule check</h2>
+      <div class="row">
+        <table>
+          <thead><tr><th>Check</th><th>Result</th></tr></thead>
+          <tbody>
+            <tr><td>Unconnected pads (PCB)</td><td><span class="pill ok">0</span></td></tr>
+            <tr><td>New errors vs v1.1.1 (PCB)</td><td><span class="pill ok">none</span></td></tr>
+            <tr><td>New errors vs v1.1.1 (plate)</td><td><span class="pill ok">none</span></td></tr>
+            <tr><td>Schematic ERC, new electrical errors</td><td><span class="pill ok">none</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">The remaining warnings (library paths, duplicate stabilizer references, silkscreen overlaps) were already in the original board. The design has not been fabricated or tested.</p>
+    </section>
+  </div>
+</div>
+
+<script>
+(function () {
+  var frame = document.getElementById('frame');
+  var stage = document.getElementById('stage');
+  var range = document.getElementById('pos');
+  var before = document.getElementById('img-before');
+  var after = document.getElementById('img-after');
+  var note = document.getElementById('viewnote');
+  var notes = {
+    pcb_top: 'Front of the PCB, the switch side. The bottom row is the one that changed.',
+    pcb_bottom: 'Back of the PCB, seen from below, so left and right are mirrored: the spacebar and new keys appear on the right.',
+    plate_top: 'Top plate. Switch and stabilizer cutouts follow the new bottom row.'
+  };
+  var labels = { pcb_top: 'PCB front', pcb_bottom: 'PCB back', plate_top: 'Plate' };
+
+  function setPos(p) {
+    p = Math.max(0, Math.min(100, p));
+    frame.style.setProperty('--pos', p + '%');
+    range.value = p;
+  }
+  setPos(50);
+  range.addEventListener('input', function () { setPos(parseFloat(range.value)); });
+
+  var dragging = false;
+  function fromEvent(e) {
+    var r = frame.getBoundingClientRect();
+    setPos((e.clientX - r.left) / r.width * 100);
+  }
+  frame.addEventListener('pointerdown', function (e) { dragging = true; frame.setPointerCapture(e.pointerId); fromEvent(e); });
+  frame.addEventListener('pointermove', function (e) { if (dragging) fromEvent(e); });
+  frame.addEventListener('pointerup', function () { dragging = false; });
+  frame.addEventListener('pointercancel', function () { dragging = false; });
+
+  document.querySelectorAll('.tabs button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var v = b.dataset.view;
+      document.querySelectorAll('.tabs button').forEach(function (o) { o.setAttribute('aria-selected', String(o === b)); });
+      before.src = 'img/' + v + '_before.png';
+      after.src = 'img/' + v + '_after.png';
+      before.alt = 'Before: ' + labels[v] + ', YM60JIS v1.1.1';
+      after.alt = 'After: ' + labels[v] + ', YM60JIS Trilingual v1.1.2';
+      note.textContent = notes[v];
+      try { localStorage.setItem('ym60-view', v); } catch (e) {}
+    });
+  });
+
+  var zf = document.getElementById('z-fit'), zr = document.getElementById('z-row');
+  function setZoom(on) {
+    stage.classList.toggle('zoom', on);
+    zf.setAttribute('aria-pressed', String(!on));
+    zr.setAttribute('aria-pressed', String(on));
+    if (on) {
+      // the changed row sits at the bottom; start the scroll on the left half of the board
+      stage.scrollLeft = 0;
+    }
+  }
+  zf.addEventListener('click', function () { setZoom(false); });
+  zr.addEventListener('click', function () { setZoom(true); });
+
+  try {
+    var saved = localStorage.getItem('ym60-view');
+    if (saved && saved !== 'pcb_top') { var t = document.querySelector('.tabs button[data-view="' + saved + '"]'); if (t) t.click(); }
+  } catch (e) {}
+})();
+</script>
+</body>
+</html>
